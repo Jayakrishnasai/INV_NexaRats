@@ -1,0 +1,111 @@
+{
+  "date": "2026-03-11",
+  "generatedAt": "2026-03-11T18:29:00.532Z",
+  "summary": {
+    "totalSales": 708750,
+    "salesCount": 6,
+    "totalPurchases": 0,
+    "purchaseCount": 0
+  },
+  "details": {
+    "sales": [
+      {
+        "id": "74735417-b017-47c4-a431-7d7d10536858",
+        "customer_id": null,
+        "subtotal": 75000,
+        "gst_amount": 3750,
+        "total": 78750,
+        "paid_amount": 78750,
+        "method": "cash",
+        "status": "Paid",
+        "source": "offline",
+        "order_status": null,
+        "assigned_staff": null,
+        "delivery_status": null,
+        "date": "2026-03-11",
+        "created_at": "2026-03-11T11:02:04.569522+00:00"
+      },
+      {
+        "id": "960c5459-cc20-47e9-a0c2-3ddb9e1b33ea",
+        "customer_id": null,
+        "subtotal": 75000,
+        "gst_amount": 3750,
+        "total": 78750,
+        "paid_amount": 78750,
+        "method": "cash",
+        "status": "Paid",
+        "source": "offline",
+        "order_status": null,
+        "assigned_staff": null,
+        "delivery_status": null,
+        "date": "2026-03-11",
+        "created_at": "2026-03-11T16:34:00.574444+00:00"
+      },
+      {
+        "id": "6c6deb7c-1df4-479f-8f3d-2a6f1199138a",
+        "customer_id": null,
+        "subtotal": 225000,
+        "gst_amount": 11250,
+        "total": 236250,
+        "paid_amount": 236250,
+        "method": "cash",
+        "status": "Paid",
+        "source": "offline",
+        "order_status": null,
+        "assigned_staff": null,
+        "delivery_status": null,
+        "date": "2026-03-11",
+        "created_at": "2026-03-11T16:56:33.829077+00:00"
+      },
+      {
+        "id": "ac843958-c679-4b7d-8898-f4d1b7b51527",
+        "customer_id": null,
+        "subtotal": 125000,
+        "gst_amount": 6250,
+        "total": 131250,
+        "paid_amount": 131250,
+        "method": "cash",
+        "status": "Paid",
+        "source": "offline",
+        "order_status": null,
+        "assigned_staff": null,
+        "delivery_status": null,
+        "date": "2026-03-11",
+        "created_at": "2026-03-11T17:52:13.805349+00:00"
+      },
+      {
+        "id": "1c317edb-fba9-4f10-8c71-1e22faa254f3",
+        "customer_id": null,
+        "subtotal": 50000,
+        "gst_amount": 2500,
+        "total": 52500,
+        "paid_amount": 52500,
+        "method": "upi",
+        "status": "Paid",
+        "source": "online",
+        "order_status": "Delivered",
+        "assigned_staff": null,
+        "delivery_status": null,
+        "date": "2026-03-11",
+        "created_at": "2026-03-11T17:53:48.228175+00:00"
+      },
+      {
+        "id": "de3750cb-f183-4b52-bab2-798cf7a9fc5e",
+        "customer_id": "528d2843-387a-4865-9a00-8a9ed1a1d899",
+        "subtotal": 125000,
+        "gst_amount": 6250,
+        "total": 131250,
+        "paid_amount": 131250,
+        "method": "cash",
+        "status": "Paid",
+        "source": "offline",
+        "order_status": null,
+        "assigned_staff": null,
+        "delivery_status": null,
+        "date": "2026-03-11",
+        "created_at": "2026-03-11T18:17:14.833235+00:00"
+      }
+    ],
+    "purchases": []
+  }
+}

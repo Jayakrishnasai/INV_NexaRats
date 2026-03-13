@@ -1,0 +1,11 @@
+Type,ID,Display ID,Date,Total Amount,Status,Payment Method,Customer/Vendor
+Sale,74735417-b017-47c4-a431-7d7d10536858,,2026-03-11,78750,Paid,cash,""
+Sale,960c5459-cc20-47e9-a0c2-3ddb9e1b33ea,,2026-03-11,78750,Paid,cash,""
+Sale,6c6deb7c-1df4-479f-8f3d-2a6f1199138a,,2026-03-11,236250,Paid,cash,""
+Sale,ac843958-c679-4b7d-8898-f4d1b7b51527,,2026-03-11,131250,Paid,cash,""
+Sale,1c317edb-fba9-4f10-8c71-1e22faa254f3,,2026-03-11,52500,Paid,upi,""
+Sale,de3750cb-f183-4b52-bab2-798cf7a9fc5e,,2026-03-11,131250,Paid,cash,""
+
+--- SUMMARY ---
+Total Sales Amount: 708750
+Total Purchases Amount: 0

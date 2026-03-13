@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:80"
+    environment:
+      - VITE_API_BASE_URL=http://localhost:5000/api/v1
+    depends_on:
+      - backend
+
+  backend:
+    build: ./backend
+    ports:
+      - "5000:5000"
+    env_file: ./backend/.env
+  
+  whatsapp:
+    build: ./whatsapp/whatsapp
+    ports:
+      - "5005:5005"
+    volumes:
+      - wa_auth:/app/.wwebjs_auth
+    env_file: ./whatsapp/whatsapp/.env
+
+volumes:
+  wa_auth:

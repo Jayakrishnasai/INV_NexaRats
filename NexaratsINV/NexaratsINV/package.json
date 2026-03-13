@@ -1,0 +1,27 @@
+{
+  "name": "nexaratsinv",
+  "version": "1.0.0",
+  "description": "**NexaratsINV** is an all-in-one Smart Inventory Management and Online Storefront system. It bridges the gap between traditional retail operations (POS) and modern e-commerce by providing a unified platform for inventory, billing, and customer-facing digital sales.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix frontend\" \"npm run dev --prefix backend\"",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "dev:backend": "npm run dev --prefix backend",
+    "test": "echo \"No tests specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nexarats/NexaratsINV.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Nexarats/NexaratsINV/issues"
+  },
+  "homepage": "https://github.com/Nexarats/NexaratsINV#readme",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
