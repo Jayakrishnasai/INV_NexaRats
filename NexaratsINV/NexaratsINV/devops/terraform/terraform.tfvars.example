@@ -9,6 +9,7 @@ cloudflare_account_id = "your-account-id"
 # Backend Secrets (Captured from Code Discovery)
 supabase_url              = "https://hcqeyxbdymqnapbhvdog.supabase.co"
 supabase_service_role_key = "your-service-role-key"
+db_connection_string      = "postgresql://postgres:NexaratsINV@db.hcqeyxbdymqnapbhvdog.supabase.co:5432/postgres"
 jwt_secret                = "your-jwt-secret"
 razorpay_encryption_key   = "your-64-char-hex-key"
 wa_api_key                = "your-shared-wa-secret"
