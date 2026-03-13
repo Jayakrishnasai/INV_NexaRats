@@ -34,20 +34,9 @@ variable "supabase_service_role_key" {
   sensitive   = true
 }
 
-variable "jwt_secret" {
-  description = "JWT Secret for backend auth"
-  type        = string
-  sensitive   = true
-}
-
 variable "razorpay_encryption_key" {
   description = "64-char hex key for Razorpay encryption"
   type        = string
   sensitive   = true
 }
 
-variable "wa_api_key" {
-  description = "Shared secret for WhatsApp microservice"
-  type        = string
-  sensitive   = true
-}
