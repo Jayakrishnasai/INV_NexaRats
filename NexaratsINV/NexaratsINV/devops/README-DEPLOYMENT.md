@@ -57,9 +57,14 @@ terraform apply
 
 To run the entire stack locally using Docker:
 
-```bash
-./devops/scripts/deploy.sh
-```
+1. **Generate Local Secrets**: Run the helper script to populate your `.env.development` with fresh JWT secrets:
+   ```powershell
+   ./devops/scripts/generate-secrets.ps1
+   ```
+2. **Start Services**:
+   ```bash
+   ./devops/scripts/deploy.sh
+   ```
 
 ## 6. Monitoring
 
