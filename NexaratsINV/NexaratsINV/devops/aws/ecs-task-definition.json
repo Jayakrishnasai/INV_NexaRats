@@ -1,0 +1,82 @@
+{
+  "family": "nexarats-backend",
+  "containerDefinitions": [
+    {
+      "name": "backend",
+      "image": "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/nexarats-backend:latest",
+      "cpu": 256,
+      "memory": 512,
+      "portMappings": [
+        {
+          "containerPort": 5000,
+          "hostPort": 5000,
+          "protocol": "tcp"
+        }
+      ],
+      "essential": true,
+      "environment": [
+        { "name": "NODE_ENV", "value": "production" },
+        { "name": "WA_API_URL", "value": "http://localhost:5005/api/whatsapp" }
+      ],
+      "secrets": [
+        { "name": "SUPABASE_URL", "valueFrom": "arn:aws:secretsmanager:${AWS_REGION}:${AWS_ACCOUNT_ID}:secret:SUPABASE_URL" },
+        { "name": "SUPABASE_SERVICE_ROLE_KEY", "valueFrom": "arn:aws:secretsmanager:${AWS_REGION}:${AWS_ACCOUNT_ID}:secret:SUPABASE_SERVICE_ROLE_KEY" },
+        { "name": "JWT_SECRET", "valueFrom": "arn:aws:secretsmanager:${AWS_REGION}:${AWS_ACCOUNT_ID}:secret:JWT_SECRET" }
+      ],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/nexarats-backend",
+          "awslogs-region": "${AWS_REGION}",
+          "awslogs-stream-prefix": "ecs"
+        }
+      }
+    },
+    {
+      "name": "whatsapp",
+      "image": "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/nexarats-whatsapp:latest",
+      "cpu": 512,
+      "memory": 1024,
+      "portMappings": [
+        {
+          "containerPort": 5005,
+          "hostPort": 5005,
+          "protocol": "tcp"
+        }
+      ],
+      "essential": true,
+      "environment": [
+        { "name": "NODE_ENV", "value": "production" }
+      ],
+      "mountPoints": [
+        {
+          "sourceVolume": "wa_auth_efs",
+          "containerPath": "/app/.wwebjs_auth",
+          "readOnly": false
+        }
+      ],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/nexarats-whatsapp",
+          "awslogs-region": "${AWS_REGION}",
+          "awslogs-stream-prefix": "ecs"
+        }
+      }
+    }
+  ],
+  "volumes": [
+    {
+      "name": "wa_auth_efs",
+      "efsVolumeConfiguration": {
+        "fileSystemId": "${EFS_FILE_SYSTEM_ID}",
+        "rootDirectory": "/"
+      }
+    }
+  ],
+  "requiresCompatibilities": ["FARGATE"],
+  "networkMode": "awsvpc",
+  "cpu": "1024",
+  "memory": "2048",
+  "executionRoleArn": "arn:aws:iam::${AWS_ACCOUNT_ID}:role/ecsTaskExecutionRole"
+}

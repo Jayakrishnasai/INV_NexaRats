@@ -1,0 +1,17 @@
+#:schema https://raw.githubusercontent.com/cloudflare/workers-sdk/main/packages/wrangler/config-schema.json
+name = "nexarats-frontend"
+pages_build_output_dir = "../../frontend/dist"
+
+[vars]
+VITE_API_BASE_URL = "https://api.nexarats.com/api/v1"
+VITE_WHATSAPP_API_URL = "https://wa.nexarats.com/api/whatsapp"
+VITE_USE_MOCKS = "false"
+
+# Production environment
+[env.production]
+name = "nexarats-frontend-prod"
+
+[env.production.vars]
+VITE_API_BASE_URL = "https://api.nexarats.com/api/v1"
+VITE_WHATSAPP_API_URL = "https://wa.nexarats.com/api/whatsapp"
+VITE_USE_MOCKS = "false"

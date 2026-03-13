@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ../../
+      dockerfile: devops/docker/Dockerfile.backend
+    ports:
+      - "5000:5000"
+    env_file:
+      - ../env/.env.development
+    environment:
+      - WA_API_URL=http://whatsapp:5005/api/whatsapp
+    depends_on:
+      - whatsapp
+
+  whatsapp:
+    build:
+      context: ../../
+      dockerfile: devops/docker/Dockerfile.whatsapp
+    ports:
+      - "5005:5005"
+    env_file:
+      - ../env/.env.development
+    volumes:
+      - wa_auth_data:/app/.wwebjs_auth
+
+volumes:
+  wa_auth_data:

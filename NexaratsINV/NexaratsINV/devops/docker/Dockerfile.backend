@@ -1,0 +1,26 @@
+# Multi-stage build for Backend API
+FROM node:20-slim AS builder
+
+WORKDIR /app
+
+# Copy package files
+COPY backend/package*.json ./
+RUN npm install
+
+# Copy backend source
+COPY backend/ ./
+RUN npm run build
+
+# Production stage
+FROM node:20-slim
+
+WORKDIR /app
+ENV NODE_ENV=production
+
+COPY --from=builder /app/dist ./dist
+COPY --from=builder /app/package*.json ./
+RUN npm install --production
+
+EXPOSE 5000
+
+CMD ["npm", "start"]

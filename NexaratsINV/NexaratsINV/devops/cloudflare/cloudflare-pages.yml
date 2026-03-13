@@ -1,0 +1,14 @@
+project_name: nexarats-frontend
+production_branch: main
+
+build:
+  command: npm run build
+  directory: dist
+  root_directory: frontend
+
+deployment:
+  env_vars:
+    - VITE_API_BASE_URL
+    - VITE_WHATSAPP_API_URL
+    - VITE_USE_MOCKS
+    - VITE_WA_API_KEY

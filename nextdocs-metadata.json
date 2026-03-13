@@ -1,0 +1,79 @@
+{
+  "exportedAt": "2026-03-13T12:05:49.900Z",
+  "source": "nextdocs",
+  "version": "0.25.3",
+  "pages": {
+    "surya.md": {
+      "pageId": "019ce6e6-4bb4-7a31-8d47-2f6fbd0d30cb",
+      "slugId": "KPUe2Ad342",
+      "icon": null,
+      "position": "a8BGz",
+      "parentPath": null,
+      "createdAt": "2026-03-13T11:12:58.291Z",
+      "updatedAt": "2026-03-13T11:13:36.141Z"
+    },
+    "surya/Final%20Production%20Readiness%20Report.md": {
+      "pageId": "019ce6e6-de11-7d85-b221-46157bff7805",
+      "slugId": "BrONIcXELW",
+      "icon": null,
+      "position": "a0Avt",
+      "parentPath": "surya.md",
+      "createdAt": "2026-03-13T11:13:35.760Z",
+      "updatedAt": "2026-03-13T11:29:19.142Z"
+    },
+    "surya/DevOps%20Readiness%20Report%20%E2%80%94%20NSE%20Project.md": {
+      "pageId": "019ce6f5-80da-74ac-87be-60f8a3a26cd5",
+      "slugId": "BXLxZImDW5",
+      "icon": null,
+      "position": "a13yR",
+      "parentPath": "surya.md",
+      "createdAt": "2026-03-13T11:29:34.937Z",
+      "updatedAt": "2026-03-13T11:41:42.128Z"
+    },
+    "surya/Docker%20Configuration%20-%20NSE%20Project.md": {
+      "pageId": "019ce6fb-20aa-7a73-9c06-dc3dfeec1616",
+      "slugId": "UVcRIHf2Dt",
+      "icon": null,
+      "position": "a4CJg",
+      "parentPath": "surya.md",
+      "createdAt": "2026-03-13T11:35:43.528Z",
+      "updatedAt": "2026-03-13T11:39:09.401Z"
+    },
+    "surya/API%20Documentation%20%E2%80%94%20Nexarats%20INV%20Backend.md": {
+      "pageId": "019ce6fa-ebf3-7608-ae4a-e8a475c0ffbc",
+      "slugId": "ZA2iCbAS5z",
+      "icon": null,
+      "position": "a3Anr",
+      "parentPath": "surya.md",
+      "createdAt": "2026-03-13T11:35:30.035Z",
+      "updatedAt": "2026-03-13T11:41:22.190Z"
+    },
+    "surya/CI%2FCD%20Pipeline%20Configuration%20(GitHub%20Actions).md": {
+      "pageId": "019ce6fe-4367-7af6-ab9e-e9ebea094e98",
+      "slugId": "Yn7ollTxtX",
+      "icon": null,
+      "position": "a54Xx",
+      "parentPath": "surya.md",
+      "createdAt": "2026-03-13T11:39:09.031Z",
+      "updatedAt": "2026-03-13T11:40:29.345Z"
+    },
+    "surya/Environment%20Variable%20Documentation%20%E2%80%94%20NSE%20Monorepo.md": {
+      "pageId": "019ce6f5-ae32-755c-ba41-287f365e292c",
+      "slugId": "ObcOt4HTUT",
+      "icon": null,
+      "position": "a21TS",
+      "parentPath": "surya.md",
+      "createdAt": "2026-03-13T11:29:46.544Z",
+      "updatedAt": "2026-03-13T11:41:32.232Z"
+    },
+    "surya/Walkthrough%20-%20NSE%20DevOps%20Audit%20%26%20Extraction.md": {
+      "pageId": "019ce6ff-7b7d-7d54-a82e-cdd403891bb3",
+      "slugId": "QvcWR3MidZ",
+      "icon": null,
+      "position": "a62Ya",
+      "parentPath": "surya.md",
+      "createdAt": "2026-03-13T11:40:28.925Z",
+      "updatedAt": "2026-03-13T11:41:10.134Z"
+    }
+  }
+}
